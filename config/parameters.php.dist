@@ -1,0 +1,6 @@
+<?php
+
+$db_host = "localhost";
+$db_name = "dc1_grp2_jwd";
+$db_user = "root";
+$db_pass = "root";

@@ -1,5 +1,7 @@
 <?php
 
+// Fichier à copier et à renomer parameters.php
+
 $db_host = "localhost";
 $db_name = "dc1_grp2_jwd";
 $db_user = "root";

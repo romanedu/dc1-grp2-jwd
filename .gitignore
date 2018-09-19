@@ -3,3 +3,4 @@ config/parameters.php
 *.bak
 _psd/
 nbproject/
+.idea/

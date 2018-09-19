@@ -1,5 +1,4 @@
 <?php
-
 require_once 'functions.php';
 require_once 'model/database.php';
 
@@ -14,7 +13,7 @@ getHeader("Accueil", "Site internet Jean WebDesign");
 
     <div id="header_content" class="row col_center">
 
-        <?php getMenu(); ?>
+<?php getMenu(); ?>
 
         <h2>Hello! Je suis jean WebDesign</h2>
         <h3>J'aime bidouiller Photoshop</h3>
@@ -29,7 +28,7 @@ getHeader("Accueil", "Site internet Jean WebDesign");
         <div id="gallery_content" class="row col_center flex_wrapper">
             <h2>Dernières photos</h2>
 
-            <?php foreach ($liste_photos as $photo) : ?>
+<?php foreach ($liste_photos as $photo) : ?>
                 <?php include 'include/photo.inc.php'; ?>
             <?php endforeach; ?>
 

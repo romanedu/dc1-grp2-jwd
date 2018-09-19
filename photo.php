@@ -18,6 +18,7 @@ getHeader($photo["titre"], "Description page photo");
 
 <main class="row col_center">
 
+
     <h1><?php echo $photo["titre"]; ?></h1>
     <img src="images/<?php echo $photo["img"]; ?>">
 
@@ -26,6 +27,18 @@ getHeader($photo["titre"], "Description page photo");
             <li># <?php echo $tag["libelle"]; ?></li>
         <?php endforeach; ?>
     </ul>
+
+    <p><?php echo $photo ["description"]; ?> </p>
+
+    <p> Nb likes : <?php echo $photo ["nb_likes"]; ?> </p>
+
+    <p><?php echo $photo ["date_creation"]; ?> </p>
+
+    <p>
+        <a href="categorie.php?id=<?php echo $photo ['categorie_id'] ?>">
+            <?php echo $photo ["categorie"]; ?>
+        </a>
+    </p>
 
 </main>
 

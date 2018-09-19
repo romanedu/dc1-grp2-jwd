@@ -6,7 +6,11 @@
     </a>
 
     <div class="infos">
-        <h3><?php echo $photo["titre"]; ?> #<?php echo $photo["categorie"]; ?></h3>
+        <h3><?php echo $photo["titre"]; ?> 
+            <a href ="categorie.php?id=<?php echo $photo["categorie_id"]; ?> ">
+                #<?php echo $photo["categorie"]; ?>
+            </a>
+        </h3>
         <p>
             <?php $liste_tags = getAllTagsByPhoto($photo["id"]); ?>
             <?php foreach ($liste_tags as $tag) : ?>
